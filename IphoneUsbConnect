@@ -1,0 +1,7 @@
+cd /lib/modules/$(uname -r)/kernel/drivers/net/usb/
+sudo cp -ia ipheth.ko ipheth.ko.orig
+sudo sh -c "xxd -p -c 20000 ipheth.ko.orig | sed 's/ec05/ea05/g' | xxd -r -p > ipheth.ko"
+sudo strip --strip-debug ipheth.ko
+sudo rmmod ipheth
+sudo modprobe ipheth
+reboot

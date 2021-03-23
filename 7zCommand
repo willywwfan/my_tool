@@ -1,0 +1,5 @@
+分割20m
+7z -v20m a File.7z File
+
+不分割
+7z a 0312_report_pic.7z 0312_report_pic
