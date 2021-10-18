@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version = 1.0
+Name = Resulotion Cofigure
+Exec = bash -c 'cd $(dirname %k) && ./linuxResolution.sh'
+Type = Application
+Terminal = true
+Encoding = UTF-8
